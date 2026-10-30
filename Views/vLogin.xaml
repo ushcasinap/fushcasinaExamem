@@ -10,7 +10,7 @@
         Spacing="10">
 
   
-        <Image Source="logo2.jpeg"
+        <Image Source="logo1.jpeg"
                WidthRequest="150"
                HorizontalOptions="Center"/>
 
