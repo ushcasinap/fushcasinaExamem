@@ -11,7 +11,7 @@
         <Label Text="ACERCA DE"
                HorizontalOptions="Center"/>
 
-       
+        <!-- Grid 3 filas x 2 columnas con la información del estudiante -->
         <Grid RowSpacing="10" ColumnSpacing="10">
             <Grid.RowDefinitions>
                 <RowDefinition/>
@@ -46,6 +46,7 @@
         </Grid>
 
         <Button x:Name="btnRegresar"
+                Style="{StaticResource styleBotonGlobal}"
                 Text="Regresar"
                 Clicked="btnRegresar_Clicked"/>
 

@@ -9,15 +9,14 @@
             Padding="20"
             Spacing="10">
 
-            
+            <!-- Usuario conectado -->
             <Label x:Name="lblUsuario"
                    HorizontalTextAlignment="End"/>
 
-     
+            <!-- Título -->
             <Label Text="RESUMEN"
                    HorizontalOptions="Center"/>
 
-      
             <Grid RowSpacing="10" ColumnSpacing="10">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
@@ -74,11 +73,13 @@
                 </Grid.ColumnDefinitions>
 
                 <Button x:Name="btnExportar"
+                        Style="{StaticResource styleBotonGlobal}"
                         Text="Exportar TXT"
                         Clicked="btnExportar_Clicked"
                         Grid.Row="0"
                         Grid.Column="0"/>
                 <Button x:Name="btnCerrarSesion"
+                        Style="{StaticResource styleBotonGlobal}"
                         Text="Cerrar sesión"
                         Clicked="btnCerrarSesion_Clicked"
                         Grid.Row="0"

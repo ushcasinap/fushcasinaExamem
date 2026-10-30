@@ -60,10 +60,10 @@ public partial class vResumen : ContentPage
                            "Pago mensual: $ " + pagoMensual.ToString("0.00") + "\n" +
                            "Pago Total: $ " + pagoTotal.ToString("0.00") + "\n\n";
 
-            // Ruta del Escritorio del usuario
+            
             string escritorio = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
 
-            // En Android no existe Escritorio, se usa la carpeta de la app
+      
             if (string.IsNullOrEmpty(escritorio))
             {
                 escritorio = FileSystem.AppDataDirectory;
@@ -83,7 +83,7 @@ public partial class vResumen : ContentPage
 
     private async void btnCerrarSesion_Clicked(object sender, EventArgs e)
     {
-        // Regresa al Login (primera ventana) y elimina Registro y Resumen de la pila
+       
         await Navigation.PopToRootAsync();
     }
 }

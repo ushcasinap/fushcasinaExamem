@@ -4,21 +4,28 @@
              x:Class="fushcasinaExamem.Views.vLogin"
              Title="Login">
 
-  
+    <ContentPage.Resources>
+        <!-- Estilo para el título: morado, tamaño 26, centrado y en negrita -->
+        <Style x:Key="styleTitulo" TargetType="Label">
+            <Setter Property="TextColor" Value="Purple"/>
+            <Setter Property="FontSize" Value="26"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+    </ContentPage.Resources>
+
     <VerticalStackLayout
         Padding="20"
         Spacing="10">
 
-  
         <Image Source="logo1.jpeg"
                WidthRequest="150"
                HorizontalOptions="Center"/>
 
         <Label Text="GIMNASIO - INICIO DE SESIÓN"
-               HorizontalOptions="Center"
-               HorizontalTextAlignment="Center"/>
+               Style="{StaticResource styleTitulo}"/>
 
-   
         <Grid RowSpacing="10" ColumnSpacing="10">
             <Grid.RowDefinitions>
                 <RowDefinition/>
@@ -30,7 +37,6 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-          
             <Label Text="Usuario:"
                    VerticalOptions="Center"
                    Grid.Row="0"
@@ -40,7 +46,6 @@
                    Grid.Row="0"
                    Grid.Column="1"/>
 
-          
             <Label Text="Contraseña:"
                    VerticalOptions="Center"
                    Grid.Row="1"
@@ -52,11 +57,13 @@
                    Grid.Column="1"/>
 
             <Button x:Name="btnIniciarSesion"
+                    Style="{StaticResource styleBotonGlobal}"
                     Text="Iniciar sesión"
                     Clicked="btnIniciarSesion_Clicked"
                     Grid.Row="2"
                     Grid.Column="0"/>
             <Button x:Name="btnAcercaDe"
+                    Style="{StaticResource styleBotonGlobal}"
                     Text="Acerca de"
                     Clicked="btnAcercaDe_Clicked"
                     Grid.Row="2"
